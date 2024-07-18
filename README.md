@@ -1,27 +1,14 @@
 # UsersList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+This is an Angular application that fetches and displays a list of users from a public API. The app includes features like search functionality, pagination, and a detailed view of each user. The application uses Bootstrap for styling.
 
-## Development server
+## Features
+- Fetches user data from a public API.
+- Displays a list of users with pagination.
+- Provides a search functionality to filter users by name or username.
+- Shows detailed information about a user when the Details button is clicked.
+- Uses Bootstrap for responsive styling.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Built With
+**Angular**: The latest version of the Angular framework.[More about Angular](https://angular.dev/)
+**Bootstrap**: For responsive and attractive UI components.[More about Bootstrap](https://getbootstrap.com/)
