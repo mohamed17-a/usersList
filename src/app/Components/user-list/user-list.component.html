@@ -1,0 +1,23 @@
+<header class="container">
+    <h1 class="text-center text-primary">Users</h1>
+</header>
+@if (loading) {
+    <div class="loader text-primary">Loading...</div>
+}
+@else if (!loading) {
+    <div class="container mt-5">
+        <input class="form-control" [(ngModel)]="searchTerm" (input)="search()" placeholder="Search by name or username">
+        <div class="d-flex gap-2">
+            <div *ngFor="let user of filteredUsers | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ user.name }}</h5>
+                        <p class="card-text">UserName:({{ user.username }})</p>
+                        <a class="btn btn-primary" [routerLink]="['/user', user.id]">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pagination-controls class="text-center" (pageChange)="onPageChange($event)"></pagination-controls>
+    </div>
+}
